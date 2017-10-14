@@ -9,7 +9,7 @@
 <div>
   <input id="highAccuracy" type="checkbox" checked="checked"  size="1" style="display: none;">
   <label for="highAccuracy" style="display: none;">highAccuracy?</label>
-  <button onclick="startTracking()">DETEKSI</button>
+  <button onclick="startTracking()">LACAK</button>
 </div>
 </p>
 <div> <canvas id="canvas"> </div>
@@ -50,7 +50,7 @@ function geoFindMe() {
     }
     // The anonymous Google Maps Static API works up to 640x640 pixels.
     img.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude 
-          + '&zoom=' + 2 + '&size=' + width + 'x' + height + '&sensor=false';
+          + '&zoom=' + 6 + '&size=' + width + 'x' + height + '&sensor=false';
   };
   function error() {
     output.innerHTML = "<p>Unable to retrieve your location</p>";
